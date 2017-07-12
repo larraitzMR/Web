@@ -70,12 +70,9 @@ public class lora {
         }
         if (parsing == null)
         {
-//            System.out.println("No se ha recibido nada del GPS");
             return;
         }
         else {
-//            if (parsing.contains("GPS"))
-//            {
             int contador = 0;
             int intIndex = 0;
             String gps = "";
@@ -92,7 +89,6 @@ public class lora {
             else {
                 return;
             }
-//
             System.out.println(gps);
             hora =  gps.substring(1, 9);
             lat =  gps.substring(10, 20);
@@ -102,10 +98,6 @@ public class lora {
             horayCoord = String.format("%s %s %s %s %s\r\n", hora,lat,latC, longi,longiC);
             escribirCoordenadas();
             escribirCoordenadasXML(hora, lat+ " " + latC, longi+ " " + longiC);
-//            }
-//            else{
-//                System.out.println("No han llegado las coordenadas");
-//            }
         }
     }
 
@@ -129,14 +121,6 @@ public class lora {
             transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "no");
 
             transformer.transform(source, result);
-
-            //initialize StreamResult with File object to save to file
-//            StreamResult resultado= new StreamResult(new StringWriter());
-//            DOMSource init = new DOMSource(document);
-//            transformer.transform(init, resultado);
-//            String xmlString = resultado.getWriter().toString();
-////            System.out.println(xmlString);
-
 
         }catch(Exception e){
             System.err.println("Error");
@@ -178,7 +162,6 @@ public class lora {
             DOMSource init = new DOMSource(document);
             transformer.transform(init, resultado);
             String xmlString = resultado.getWriter().toString();
-//            System.out.println(xmlString);
 
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
@@ -241,7 +224,6 @@ public class lora {
             DOMSource init = new DOMSource(document);
             transformer.transform(init, resultado);
             String xmlString = resultado.getWriter().toString();
-//            System.out.println(xmlString);
 
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
@@ -257,9 +239,7 @@ public class lora {
         {
             File TextFile = new File("C:\\Users\\Propietario\\Documents\\GitHub\\Web\\coordenadas.txt");
             fichero = new FileWriter(TextFile,true);
-//            pw = new PrintWriter(fichero);
             fichero.write(horayCoord);
-//            fichero.println("\r\n");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

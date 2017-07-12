@@ -30,15 +30,12 @@ public class GPS {
             }
         }
 
-//
-//
-//        System.out.println("Hello, World!");
 //        try {
-//            t.iniciar();
-//            t.crearXML();
+//            l.iniciar();
+//            l.crearXML();
 //            while (true)
 //            {
-//                t.coordenadas();
+//                l.coordenadas();
 //            }
 //        } catch (SerialPortException e) {
 //            e.printStackTrace();

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"/>
+    <title>Google Maps JavaScript API Example</title>
+    <script src="http://maps.google.com/maps?file=api&v=2&key=AIzaSyDmJDUo5aUSwLoo-ooAKo3PO6-rHpKSFn0"
+      type="text/javascript"></script>
+    <script type="text/javascript">
+
+    //<![CDATA[
+
+    function load() {
+      if (GBrowserIsCompatible()) {
+        var map = new GMap2(document.getElementById("mapaCarrera"));
+		
+        map.addControl(new GMapTypeControl());
+        map.addControl(new GLargeMapControl());
+        map.addControl(new GScaleControl());
+        map.addControl(new GOverviewMapControl());
+        
+        map.setCenter(new GLatLng(43.2919385, -1.9867600999), 15);
+      
+		map.setMapType(G_SATELLITE_MAP);
+			
+		function addtag(point, address) {
+		var marker = new GMarker(point);
+		GEvent.addListener(marker, "click", function() { marker.openInfoWindowHtml(address); } );
+		return marker;
+		}
+		
+		var point = new GLatLng(43.2919385,-1.9867600999999695);
+		var address = '<b>MyRuns Technology</b><br/><i>Mikeletegi 83</i><br />';
+		var marker = addtag(point, address);
+		
+		map.addOverlay(marker);	
+				  
+      }
+    }
+	
+	function animar()//pasamos la nueva ubicacion del cliente
+	{
+		obtenerCoordenadas();
+		var pos = new google.maps.LatLng(40.7127837, -74.00594130000002);//Mi pocision
+		//var pos = pos;//otro lugar -> donde el usuario se localiza
+			
+			var goldStar = {
+				path: google.maps.SymbolPath.CIRCLE,
+				strokeColor: '#FF4E51',
+				fillColor: '#FF4E51',
+				fillOpacity: .9,
+				strokeWeight: 1,
+				scale: 5,
+			};
+			 var marker = new google.maps.Marker({
+				position: pos,
+				draggable: true,
+				map: mapaCarrera
+			  });		
+			
+		 var options = {//opciones de la nueva pocision
+				map: mapaCarrera,
+				position: pos,
+			  };
+			  
+		  map.setCenter(options.position);//pocisionamos el mapa al centro de la nueva locacion
+	}
+	//]]>
+	google.maps.event.addDomListener(window, 'load', initialize);
+	setTimeout(function(){animar()}, 5000);//cada 5 segundos extraemos la ubicacion nuevamente
+
+    </script>
+  </head>
+  
+<body onload="load()" onunload="GUnload()">
+<h1><strong>Localizador gps</strong></h1>
+    <div id="mapaCarrera" align="center" style="width: 500px; height: 500px"></div>
+    <hr/>
+
+<?php
+
+function obtenerCoordenadas(
+	$file=fopen("coordenadas.txt","r") or
+	  die("Problemas en la creacion");
+	while(!feof($file))
+	{
+		echo "<br>";
+		$linea = fgets($file). "<br/>";
+		echo $linea;
+		$longitud = strlen($linea);
+			
+		//Substring($string,inicio,cuantosbytes)
+		$hora = substr($linea,0,8);
+		$lat = substr($linea,9,10);
+		$latC = $linea[20];
+		$longit = substr($linea,22,10);
+		$longiC = $linea[33];
+			
+		$latgrados = (int)substr($lat,0,2);
+		$latminutos = (int)substr($lat,3,2);
+		$latminutos = $latminutos/60;
+		$latsegundos = (int)substr($lat,6,4);
+		$latsegundos = $latsegundos/3600;
+		$latitudDec = $latgrados + $latminutos + $latsegundos;
+		echo "LatDec: ".$latitudDec."<br>";
+		
+		$longgrados = (int)substr($longit,0,2);
+		$longminutos = (int)substr($longit,3,2);
+		$longminutos = $longminutos/60;
+		$longsegundos = (int)substr($longit,6,4);
+		$longsegundos = $longsegundos/3600;
+		$longitudDec = -($longgrados + $longminutos + $longsegundos);
+		echo "LatDec: ".$longitudDec."<br>";
+		return;
+		
+	}
+	fclose($file);
+)
+?>
+
+</body>
+</html>

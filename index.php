@@ -29,6 +29,8 @@
 		var marker;
 		var map;
 		var coor, hora, latitud, longitud 
+		var latLag = 43.2919385;
+		var	lonLag = -1.9867600999;
 		
 		function initMap() {
 			var ubicacion = new google.maps.LatLng(43.2919385, -1.9867600999);
@@ -41,95 +43,46 @@
 			marker = new google.maps.Marker({
 				map: map,
 				position: ubicacion,
-				draggable: true,
+				draggable: false,
 				animation: google.maps.Animation.DROP,
-				icon: getCircle(),
+				icon: getCircle('blue'),
 				title : "MyRuns Technology"
 			});
-			
-			// marker.addListener('click', toggleBounce);
-			
-			// map.addListener('click', function(e) {
-				// placeMarkerAndPanTo(e.latLng, map);
-			// });
-			
-			// map.addListener('center_changed', function() {
-			// // 3 seconds after the center of the map has changed, pan back to the
-			// // marker.
-			// window.setTimeout(function() {
-				// map.panTo(marker.getPosition());
-				// }, 5000);
-			// });
-			
-			// navigator.geolocation.getCurrentPosition(function(position) {
-				// var coor = mostrarCoordenadas();
-				// hora = coor[0];
-				// console.log(hora);
-				// latitud = coor[1];
-				// console.log(latitud);
-				// longitud = coor[2];
-				// console.log(longitud);
-				// if(latitud == null)
-				// {
-					// latitud = 43.2919385;
-				// }
-				// if(longitud == null)
-				// {
-					// longitud = -1.9867600999;
-				// }
-				// var pos = {
-				  // lat: latitud,
-				  // lng: longitud
-				// };
-				// marker = new google.maps.Marker({
-					// position: pos,
-					// map: map,
-					// draggable: true,
-					// animation: google.maps.Animation.DROP,
-					// icon: getCircle()
-				// });
-				// infoWindow.setPosition(pos);
-				// map.setCenter(pos);
-			// });
+
 			setInterval(function() {
-				marker.setMap(null);
+				var i = 0;
+				console.log(i);
 				var coor = mostrarCoordenadas();
 				hora = coor[0];
-				console.log(hora);
 				latitud = coor[1];
-				console.log(latitud);
 				longitud = coor[2];
+				//sobre todo para la primera iteracion
+				//coge lat y long de partida
+				if(typeof latitud === 'undefined')
+				{
+					latitud = latLag;
+				}
+				if(typeof longitud === 'undefined')
+				{
+					longitud = lonLag;
+				}
+				//guardarmos las ultimas coordenadas por si acaso
+				latLag = latitud;
+				lonLag = longitud;
+				marker.setMap(null);
+				var ubi = new google.maps.LatLng(latitud, longitud);
+				console.log(latitud);
 				console.log(longitud);
-				if(latitud == null)
-				{
-					latitud = 43.292029;
-				}
-				if(longitud == null)
-				{
-					longitud = -1.9867530000000215;
-				}
-				var ubi = new google.maps.LatLng(lat, lon);
 				marker = new google.maps.Marker({
 					position: ubi,
 					map: map,
-					draggable: true,
-					// animation: google.maps.Animation.DROP,
-					icon: getCircleRed()
+					draggable: false,
+					icon: getCircle('red')
 				});
 				marker.setMap(map);
 			}, 5000);
 		}
 		
-				function explode(){
-		  alert("Boom!");
-		}
-			function myFunction(){
-		setTimeout(alertFunc, 3000);
-			}
-		
-			function alertFunc() {
-				alert("Hello!");
-			}
 	  
 		function toggleBounce() {
 			if (marker.getAnimation() !== null) {
@@ -139,10 +92,10 @@
 			}
 		}
 		
-		function getCircle() {
+		function getCircle(color) {
 			return {
 			  path: google.maps.SymbolPath.CIRCLE,
-			  fillColor: 'blue',
+			  fillColor: color,
 			  fillOpacity: 10,
 			  scale: 6,
 			  strokeColor: 'white',
@@ -150,22 +103,11 @@
 			};
 		}
 		
-		function getCircleRed() {
-			return {
-			  path: google.maps.SymbolPath.CIRCLE,
-			  fillColor: 'red',
-			  fillOpacity: 10,
-			  scale: 6,
-			  strokeColor: 'white',
-			  strokeWeight: .5
-			};
-		}
 		
 		var hora, lat, lon;
 		function mostrarCoordenadas()
 		{
 		$.get("coordenadasGPS.xml", {
-		// $.get("coor.xml", {
 			key: "value"
 		})
 		.done(function (xml){

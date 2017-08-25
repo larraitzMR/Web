@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xml>
+  <GPS>
+    <Hora>10:44:28</Hora>
+    <Latitud>43 17 30.8 N</Latitud>
+    <Longitud>01 59 10.8 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>10:44:33</Hora>
+    <Latitud>43 17 30.8 N</Latitud>
+    <Longitud>01 59 10.8 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>10:44:41</Hora>
+    <Latitud>43 17 30.8 N</Latitud>
+    <Longitud>01 59 10.8 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>10:44:46</Hora>
+    <Latitud>43 17 30.8 N</Latitud>
+    <Longitud>01 59 10.8 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>10:44:53</Hora>
+    <Latitud>43 17 30.8 N</Latitud>
+    <Longitud>01 59 10.8 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>10:44:59</Hora>
+    <Latitud>43 17 30.8 N</Latitud>
+    <Longitud>01 59 10.8 W</Longitud>
+  </GPS>
+<GPS><Hora>00:00:00</Hora><Latitud>00 00 00.0 S</Latitud><Longitud>00 00 00.0 N</Longitud></GPS></xml>

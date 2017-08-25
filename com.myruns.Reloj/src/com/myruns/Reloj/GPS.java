@@ -11,42 +11,42 @@ import java.io.IOException;
 public class GPS {
 
     public static void main(String[] args) {
-        lora l = new lora("COM8");
-        l.crearXML();
-
-        while (true)
-        {
-            try {
-                l.escribirCoordenadasXMLPrueba();
-                Thread.sleep(500);
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (SAXException e) {
-                e.printStackTrace();
-            } catch (TransformerException e) {
-                e.printStackTrace();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-
-//        try {
-//            l.iniciar();
-//            l.crearXML();
-//            while (true)
-//            {
-//                l.coordenadas();
+        lora l = new lora("COM3");
+//        l.crearXML();
+//
+//        while (true)
+//        {
+//            try {
+//                l.escribirCoordenadasXMLPrueba();
+//                Thread.sleep(500);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            } catch (SAXException e) {
+//                e.printStackTrace();
+//            } catch (TransformerException e) {
+//                e.printStackTrace();
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
 //            }
-//        } catch (SerialPortException e) {
-//            e.printStackTrace();
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        } catch (SAXException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        } catch (TransformerException e) {
-//            e.printStackTrace();
 //        }
+
+        try {
+            l.iniciar();
+            l.crearXML();
+            while (true)
+            {
+                l.coordenadas();
+            }
+        } catch (SerialPortException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (SAXException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (TransformerException e) {
+            e.printStackTrace();
+        }
     }
 }

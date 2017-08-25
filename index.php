@@ -37,16 +37,15 @@
 
 			map = new google.maps.Map(document.getElementById('map'), {
 				center: ubicacion,
-				zoom: 15
+				zoom: 13
 			});
 			//creo el marcador con la posición, el mapa, y el icono
 			marker = new google.maps.Marker({
 				map: map,
-				position: ubicacion,
+				// position: ubicacion,
 				draggable: false,
 				animation: google.maps.Animation.DROP,
 				icon: getCircle('blue'),
-				title : "MyRuns Technology"
 			});
 
 			setInterval(function() {
@@ -82,7 +81,6 @@
 				marker.setMap(map);
 			}, 5000);
 		}
-		
 	  
 		function toggleBounce() {
 			if (marker.getAnimation() !== null) {
@@ -103,26 +101,24 @@
 			};
 		}
 		
-		
 		var hora, lat, lon;
 		function mostrarCoordenadas()
 		{
-		$.get("coordenadasGPS.xml", {
+			$.get("coordenadasGPS.xml", {
 			key: "value"
-		})
-		.done(function (xml){
-			hora = $(xml).find('Hora').last().text();
-			lat = $(xml).find('Latitud').last().text();
-			lon = $(xml).find('Longitud').last().text();
-			console.log(hora);
-			console.log(lat);
-			console.log(lon);
-			var todo = gradToDec(lat,lon);
-			lat = todo[0];
-			lon = todo[1];
-			
-		});		
-		return [hora, lat, lon];
+			})
+			.done(function (xml){
+				hora = $(xml).find('Hora').last().text();
+				lat = $(xml).find('Latitud').last().text();
+				lon = $(xml).find('Longitud').last().text();
+				console.log(hora);
+				console.log(lat);
+				console.log(lon);
+				var todo = gradToDec(lat,lon);
+				lat = todo[0];
+				lon = todo[1];
+			});		
+			return [hora, lat, lon];
 		}
 		
 		function gradToDec(la,lo)
@@ -146,7 +142,6 @@
 			return [latitudDec,-longitudDec];
 		}
 
-	
     </script>
   </body>
 </html>

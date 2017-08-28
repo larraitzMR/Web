@@ -104,9 +104,9 @@
 		var hora, lat, lon;
 		function mostrarCoordenadas()
 		{
-			$.get("coordenadasGPS.xml", {
+			$.get("leerXML.php", {
 			key: "value"
-			})
+			 })
 			.done(function (xml){
 				hora = $(xml).find('Hora').last().text();
 				lat = $(xml).find('Latitud').last().text();
@@ -120,6 +120,7 @@
 			});		
 			return [hora, lat, lon];
 		}
+		
 		
 		function gradToDec(la,lo)
 		{

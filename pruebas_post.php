@@ -2,19 +2,21 @@
 
 echo $localizar=$_POST['coordenadas'];
 
-$hora = substr($localizar,1,8);
-$lat = substr($localizar,10,10);
-$latC = $localizar[21];
-$longit = substr($localizar,23,10);
-$longiC = $localizar[34];
+$hora = substr($localizar,0,8);
+$lat = substr($localizar,9,10);
+$latC = $localizar[20];
+$longit = substr($localizar,22,10);
+$longiC = $localizar[33];
 
+/*
 echo $hora;
 echo $lat;
 echo $latC;
 echo $longit;
 echo $longiC;
-
-$datos = 
+*/
+//$datos = $hora." ".$lat." ". $latC." ".$longit." ".$longiC;
+$datos =
 "<?xml version=".'"1.0"' ." " ."encoding=" . '"UTF-8"'."?>".
 "\n<xml>
 <GPS>
@@ -24,7 +26,9 @@ $datos =
 </GPS>
 </xml>";
 
-// file_put_contents('coorPrueba.xml', $datos, FILE_APPEND);
+//file_put_contents('coorPrueba.xml', $datos, FILE_APPEND);
 file_put_contents('coorPrueba.xml', $datos);
+//file_put_contents('coorPrueba.xml', $localizar);
+
 
 ?>

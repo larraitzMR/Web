@@ -1,28 +1,188 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <xml>
-<GPS>
-    <Hora>10:44:33</Hora>
-    <Latitud>43 17 30.8 N</Latitud>
-    <Longitud>01 59 10.8 W</Longitud>
+  <GPS>
+    <Hora>09:05:23</Hora>
+    <Latitud>43 17 31.9 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
   </GPS>
 <GPS>
-    <Hora>10:44:41</Hora>
-    <Latitud>43 17 30.8 N</Latitud>
-    <Longitud>01 59 10.8 W</Longitud>
+    <Hora>09:05:30</Hora>
+    <Latitud>43 17 31.9 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
   </GPS>
 <GPS>
-    <Hora>10:44:46</Hora>
-    <Latitud>43 17 30.8 N</Latitud>
-    <Longitud>01 59 10.8 W</Longitud>
+    <Hora>09:05:35</Hora>
+    <Latitud>43 17 31.9 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
   </GPS>
 <GPS>
-    <Hora>10:44:53</Hora>
-    <Latitud>43 17 30.8 N</Latitud>
-    <Longitud>01 59 10.8 W</Longitud>
+    <Hora>09:05:43</Hora>
+    <Latitud>43 17 31.9 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
   </GPS>
 <GPS>
-    <Hora>10:44:59</Hora>
-    <Latitud>43 17 30.8 N</Latitud>
-    <Longitud>01 59 10.8 W</Longitud>
+    <Hora>09:05:49</Hora>
+    <Latitud>43 17 31.9 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:05:55</Hora>
+    <Latitud>43 17 31.9 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:06:01</Hora>
+    <Latitud>43 17 31.9 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:06:07</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:06:14</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:06:19</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:06:26</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:06:33</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:06:38</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:06:45</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:06:52</Hora>
+    <Latitud>43 17 31.9 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:06:58</Hora>
+    <Latitud>43 17 31.9 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:07:04</Hora>
+    <Latitud>43 17 31.9 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:07:10</Hora>
+    <Latitud>43 17 31.9 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:07:17</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:07:22</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:07:29</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:07:36</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:07:41</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:07:48</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:07:53</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:08:01</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.8 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:08:07</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.8 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:08:12</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:08:19</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:08:26</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:08:31</Hora>
+    <Latitud>43 17 31.9 N</Latitud>
+    <Longitud>01 59 11.9 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:08:38</Hora>
+    <Latitud>43 17 32.2 N</Latitud>
+    <Longitud>01 59 12.0 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:08:45</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 12.3 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:08:51</Hora>
+    <Latitud>43 17 32.0 N</Latitud>
+    <Longitud>01 59 12.7 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:08:57</Hora>
+    <Latitud>43 17 32.1 N</Latitud>
+    <Longitud>01 59 12.� �</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:09:04</Hora>
+    <Latitud>43 17 32.4 N</Latitud>
+    <Longitud>01 59 13.3 W</Longitud>
+  </GPS>
+<GPS>
+    <Hora>09:09:15</Hora>
+    <Latitud>43 17 32.6 N</Latitud>
+    <Longitud>01 59 13.3 W</Longitud>
   </GPS>
 </xml>

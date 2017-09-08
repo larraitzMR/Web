@@ -27,7 +27,7 @@ $datos =
 </xml>";
 
 //file_put_contents('coorPrueba.xml', $datos, FILE_APPEND);
-file_put_contents('coorPrueba.xml', $datos);
+file_put_contents('coordenadasGPS.xml', $datos);
 //file_put_contents('coorPrueba.xml', $localizar);
 
 

@@ -1,13 +1,4 @@
 
-AT+COPS=?
-+COPS: (2,"vodafone ES",,"21401"),(1,"Orange",,"21403"),(1,"Movistar",,"21407"),,(0-4),(0,2)
-
-AT+COPS=4,2,"42502"
-OK
-AT+CGREG?
-+CGREG: 0,0
-
-
 AT+CREG?
 +CREG: 0,2
 
@@ -36,12 +27,14 @@ AT#HTTPCFG=0,"larraitz.myruns.com",80,0,,,0,120,1
 //GET
 AT#HTTPQRY=0,0,"/pruebas_post.php"
 
-//POST
-AT#HTTPSND=0,0,"/pruebas_post.php",4
+AT#HTTPRCV=0
 
+//POST
 AT#HTTPSND=0,0,"/pruebas_post.php",46,"application/x-www-form-urlencoded"
 
-coordenadas=10:44:28 40 17 30.8 N 08 53 10.8 W
+coordenadas=14:08:28 43 17 30.8 N 01 59 10.8 W
+
+coordenadas=14:08:30 43 18 30.8 N 01 59 10.8 W
 
 coordenadas = 12
 hora = 8

@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="com.myruns.Reloj:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/com_myruns_Reloj_jar</output-path>
+    <root id="archive" name="com.myruns.Reloj.jar">
+      <element id="module-output" name="com.myruns.Reloj" />
+      <element id="extracted-dir" path="C:/JavaLibs/jSSC-2.8.0-Release/jSSC-2.8.0-Release/jssc.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

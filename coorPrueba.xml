@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xml>
 <GPS>
-	<Hora></Hora>
-	<Latitud> </Latitud>
-	<Longitud> </Longitud>
+	<Hora>10:44:28</Hora>
+	<Latitud>00 17 30.8 N</Latitud>
+	<Longitud>00 53 10.8 W</Longitud>
 </GPS>
 </xml>

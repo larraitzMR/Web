@@ -39,7 +39,7 @@
 				center: ubicacion,
 				zoom: 13
 			});
-			//creo el marcador con la posición, el mapa, y el icono
+			//creo el marcador con la posici贸n, el mapa, y el icono
 			marker = new google.maps.Marker({
 				map: map,
 				// position: ubicacion,

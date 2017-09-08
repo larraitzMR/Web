@@ -12,8 +12,8 @@ public class GPS {
 
     public static void main(String[] args) {
         lora l = new lora("COM3");
-//        l.crearXML();
-//
+        l.crearXML();
+
 //        while (true)
 //        {
 //            try {

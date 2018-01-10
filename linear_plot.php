@@ -21,7 +21,8 @@ $graph->yaxis->HideTicks(true,false);
 
 $graph->xaxis->SetTickLabels(array('A','B','C','D'));
 $graph->ygrid->SetFill(false);
-// $graph->SetBackgroundImage("tiger_bkg.png",BGIMG_FILLFRAME);
+$graph->SetBackgroundImage("recorrido.png",BGIMG_FILLPLOT);
+
 
 // Add one or many plot objects to the graph
 $p1 = new LinePlot($datay1);

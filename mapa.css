@@ -1,0 +1,95 @@
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+
+	.mdl-layout__header{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		box-sizing: border-box;
+		flex-shrink: 0;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border: none;
+		min-height: 64px;
+		max-height: 1000px;
+		z-index: 3;
+		color: rgb(33,150,243);
+	}
+	.mdl-layout__header-row{
+		flex-shrink: 0;
+		background-color: rgb(33,150,243);
+	}
+	.mdl-layout__tab-bar-container{
+		background-color: rgb(33,150,243);
+	}
+	.logo {
+		max-height: 100%;
+		margin-left: -1.5em;
+		margin-right: 1.5em;
+		padding-top: 10px;
+	}
+	.mdl-layout__tab-bar-container {
+		position: relative;
+		height: 48px;
+		width: 100%;
+		border: none;
+		margin: 0;
+		z-index: 2;
+		flex-grow: 0;
+		flex-shrink: 0;
+		overflow: hidden;
+	}
+	.content-grid {
+	  max-width:100%;
+	}
+	.mapa_cell{
+		height: 500px;
+		padding: 5px;
+	}
+	#map {
+		height: 100%;
+	}
+	.inf_cell{
+		height: 500px;
+		padding: 5px;
+		/*		  display: -webkit-flex;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-flex-direction: column;
+			  -ms-flex-direction: column;
+				  flex-direction: column;
+		  -webkit-align-items: stretch;
+			  -ms-flex-align: stretch;
+				  align-items: stretch;*/
+	}
+	.inf_graf:nth-child(1) {
+	  color: #ACEC00;
+	}
+	.inf_graf:nth-child(2) {
+	  color: #00BBD6;
+	}
+	.inf_graf:nth-child(3) {
+	  color: #BA65C9;
+	}
+	.chart_cell{
+		width: 800px;
+		height: 300px;
+		padding: 5px;
+	}
+	#elevation_chart{ 
+		height: 100%;
+		width: 1240px;
+	} 
+
+	/* Optional: Makes the sample page fill the window. */
+	html, body {
+		height: 79%;	
+		margin: 0%;
+		padding: 0%;
+	}
+
+	
+
+}

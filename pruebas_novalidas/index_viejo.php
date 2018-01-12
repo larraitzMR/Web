@@ -4,82 +4,42 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
 	<title>MyRuns Map</title>
-	<link rel="stylesheet" type="text/css" href="C:\Users\Propietario\Documents\GitHub\Web\mapa.css" />
-	<script src="https://www.google.com/jsapi"></script>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<script src="./mdl/material.min.js"></script>
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-yellow.min.css" />
+    <style>
+	#contenedor_mapa {
+	height: 100%;
+	}
+	.mapa {
+		width: 1200px;
+		height: 100%;
+	}
+	.grafico{
+		width: 1200px; 
+		height: 42%;
+	}
 	
+
+	/* Optional: Makes the sample page fill the window. */
+	html, body {
+	background-color: rgb(33,150,243);
+	height: 79%;
+	margin: 0%;
+	padding: 0%;
+	}
+	#img1 {
+    padding-left: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 9%;
+	}
+    </style>
+	// <link rel="stylesheet" type="text/css" href="C:\Users\Propietario\Documents\GitHub\Web\mapa.css" />
   </head>
   <body>
-  <div class="mdl-layout__container">
-	  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-			<header class="mdl-layout__header is-casting-shadow">
-				<div class="mdl-layout__header-row">
-				  <img class="logo" src="myruns-blanco_rec.png"  />
-				</div>
-				<div class="mdl-layout__tab-bar-container">
-					<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-					  <a href="#scroll-tab_database" class="mdl-layout__tab">DATA BASE</a>
-					  <a href="#scroll-tab_visualization" class="mdl-layout__tab is-active">VISUALIZATION</a>
-					  <a href="#scroll-tab_configuration" class="mdl-layout__tab">CONFIGURATION</a>
-					</div>
-				</div>
-			</header>
-			<main class="mdl-layout__content">
-				
-					<!-- Paneles menu-->
-					<section class="mdl-layout__tab-panel is-active" id="scroll-tab_database">
-						<div class="page-content"></div>
-					</section>
-					<section class="mdl-layout__tab-panel" id="scroll-tab_visualization">
-						<div class="page-content"></div>
-					</section>
-					<section class="mdl-layout__tab-panel" id="scroll-tab_configuration">
-						<div class="page-content"></div>
-					</section>
-				<div class="content-grid mdl-grid">
-					<div class="mapa_cell mdl-cell--7-col" >
-						<div id="map"></div>
-					</div>
-					<div class="inf_cell mdl-color--white mdl-cell--5-col ">
-						<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--3-col">
-						  <use xlink:href="#piechart" mask="url(#piemask)" />
-						  <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan></text>
-						</svg>
-						<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--3-col">
-						  <use xlink:href="#piechart" mask="url(#piemask)" />
-						  <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan></text>
-						</svg>
-						<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--3-col">
-						  <use xlink:href="#piechart" mask="url(#piemask)" />
-						  <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan></text>
-						</svg>
-					</div>
-					<div class="chart_cell mdl-cell--7-col" >
-						<div id="elevation_chart"></div>
-					</div>
-				</div>
-			</main>
-	   </div>
-   </div>
-	
-	<!-- Circulos de los graficos -->
-	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">
-        <defs>
-          <mask id="piemask" maskContentUnits="objectBoundingBox">
-            <circle cx=0.5 cy=0.5 r=0.49 fill="white" />
-            <circle cx=0.5 cy=0.5 r=0.40 fill="black" />
-          </mask>
-          <g id="piechart">
-            <circle cx=0.5 cy=0.5 r=0.5 />
-            <!-- Para rellenar el cacho que falta -->
-			<path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 0.75)" />
-          </g>
-        </defs>
-    </svg>
-	
-	
+  <div id="contenedor_mapa">
+    <div class="mapa" id="map"></div>
+	<div class= "grafico" id="elevation_chart"></div>
+  </div>
+
     <script>
 	
 		// Load the Visualization API and the columnchart package.

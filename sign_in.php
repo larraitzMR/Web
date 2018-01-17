@@ -19,14 +19,7 @@
 <script type="text/javascript" src="/shared/js/myruns_readers_api.js"></script>
 
 <!-- Style -->
-<link rel="stylesheet" type="text/css" href="/shared/styles/style.css">
-
-<link rel="stylesheet" media="(max-width: 800px)" href="/shared/styles/mobile.css" />
-<link rel="stylesheet" media="(min-width: 801px)" href="/shared/styles/not-mobile.css" />
-
-<!-- Libraries -->
-<script type="text/javascript" src="/shared/includes/libraries/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="/shared/includes/libraries/papaparse.min.js"></script>
+<link rel="stylesheet" href="/styles.css" />
 
 <!-- JQuery Migrate -->
 <script src="/shared/includes/libraries/jquery-migrate-1.4.1.min.js"></script>
@@ -38,10 +31,9 @@
 <script src="/shared/includes/libraries/html2canvas.js"></script>
 
 <!-- Material design lite -->
-<link rel="stylesheet" href="/shared/includes/libraries/mdl/material.min.css">
-<script src="/shared/includes/libraries/mdl/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script src="./mdl/material.min.js"></script>
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-cyan.min.css" />
 
  
 

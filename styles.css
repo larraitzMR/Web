@@ -9,14 +9,11 @@
 		padding-bottom: 10px;
 	}
 	.content-grid {
-	  max-width:100%;
+	  width:100%;
 	}
 	.mapa_cell{
 		height: 500px;
 		padding: 5px;
-	}
-	#map {
-		height: 100%;
 	}
 	.inf_cell{
 		height: 500px;
@@ -41,14 +38,10 @@
 	  color: #BA65C9;
 	}
 	.chart_cell{
-		width: 800px;
+		width: 500px;
 		height: 300px;
 		padding: 5px;
 	}
-	#elevation_chart{ 
-		height: 100%;
-		width: 1240px;
-	} 
 
 	/* Optional: Makes the sample page fill the window. */
 	html, body {
@@ -56,7 +49,4 @@
 		margin: 0%;
 		padding: 0%;
 	}
-
-	
-
 }

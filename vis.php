@@ -5,42 +5,49 @@
 <!-- Libraries -->
 <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script> 
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 <!-- Style -->
 <style>
 	#map {
-		height: 100%;
+		height: 50%;
 	}
 	#elevation_chart{ 
-		height: 100%;
-		width: 1240px;
+		height: 30%;
+		width: 1150;
 	} 
 </style>
 
 <div class="content-grid mdl-grid">
 	<!-- Div Mapa -->
-	<div class="mapa_cell mdl-cell--7-col" >
+	<div class="mapa_cell mdl-cell--6-col" >
 		<div id="map"></div>
+		<div id="elevation_chart"></div>
 	</div>
 	<!-- Div circulos -->
 	<div class="inf_cell mdl-color--white mdl-cell--5-col ">
-		<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--3-col">
-		  <use xlink:href="#piechart" mask="url(#piemask)" />
-		  <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan></text>
+		<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col">
+			<use xlink:href="#piechart" mask="url(#piemask)" />
+			<text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan>
+			</text>
 		</svg>
-		<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--3-col">
-		  <use xlink:href="#piechart" mask="url(#piemask)" />
-		  <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan></text>
+		<section class="sect"></section>
+		<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col">
+			<use xlink:href="#piechart" mask="url(#piemask)" />
+			<text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan>
+			</text>
 		</svg>
-		<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--3-col">
-		  <use xlink:href="#piechart" mask="url(#piemask)" />
-		  <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan></text>
+		<section class="sect"></section>
+		<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col">
+			<use xlink:href="#piechart" mask="url(#piemask)" />
+			<text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan>
+			</text>
 		</svg>
 	</div>
 	<!-- Div grafico altimetria -->
-	<div class="chart_cell mdl-cell--7-col" >
+	<!-- <div class="chart_cell mdl-cell--7-col" >
 		<div id="elevation_chart"></div>
-	</div>
+	</div> -->
 </div>
 
 <!-- Circulos de los graficos -->
@@ -60,4 +67,4 @@
 
 <script type="text/javascript" src="/js/mapa.js"></script>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmJDUo5aUSwLoo-ooAKo3PO6-rHpKSFn0&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDmJDUo5aUSwLoo-ooAKo3PO6-rHpKSFn0&callback=initMap"></script>

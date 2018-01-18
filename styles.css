@@ -12,7 +12,7 @@
 	  width:100%;
 	}
 	.mapa_cell{
-		height: 500px;
+		height: 1000px;
 		padding: 5px;
 	}
 	.inf_cell{
@@ -28,25 +28,22 @@
 			  -ms-flex-align: stretch;
 				  align-items: stretch;*/
 	}
+
+
 	.inf_graf:nth-child(1) {
-	  color: #ACEC00;
+	  /*color: #ACEC00;*/
 	}
 	.inf_graf:nth-child(2) {
-	  color: #00BBD6;
+	  /*color: #00BBD6;*/
 	}
 	.inf_graf:nth-child(3) {
-	  color: #BA65C9;
+	  /*color: #BA65C9;*/
 	}
-	.chart_cell{
-		width: 500px;
-		height: 300px;
-		padding: 5px;
-	}
-
 	/* Optional: Makes the sample page fill the window. */
 	html, body {
-		height: 79%;	
+		height: 100%;	
 		margin: 0%;
 		padding: 0%;
+		/*background-color: rgb(33,150,243);*/
 	}
 }

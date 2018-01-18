@@ -13,14 +13,248 @@
 	
 	//MAPA DE GOOGLE MAPS
 	function initMap() {	
+
+		// Create a new StyledMapType object, passing it an array of styles,
+        // and the name to be displayed on the map type control.
+        var styledMapType = new google.maps.StyledMapType(
+		[
+		  {
+		    "elementType": "geometry",
+		    "stylers": [
+		      {
+		        "color": "#212121"
+		      }
+		    ]
+		  },
+		  {
+		    "elementType": "labels.icon",
+		    "stylers": [
+		      {
+		        "visibility": "off"
+		      }
+		    ]
+		  },
+		  {
+		    "elementType": "labels.text.fill",
+		    "stylers": [
+		      {
+		        "color": "#757575"
+		      }
+		    ]
+		  },
+		  {
+		    "elementType": "labels.text.stroke",
+		    "stylers": [
+		      {
+		        "color": "#212121"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "administrative",
+		    "elementType": "geometry",
+		    "stylers": [
+		      {
+		        "color": "#757575"
+		      },
+		      {
+		        "visibility": "off"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "administrative.country",
+		    "elementType": "labels.text.fill",
+		    "stylers": [
+		      {
+		        "color": "#9e9e9e"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "administrative.land_parcel",
+		    "stylers": [
+		      {
+		        "visibility": "off"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "administrative.locality",
+		    "elementType": "labels.text.fill",
+		    "stylers": [
+		      {
+		        "color": "#bdbdbd"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "poi",
+		    "stylers": [
+		      {
+		        "visibility": "off"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "poi",
+		    "elementType": "labels.text.fill",
+		    "stylers": [
+		      {
+		        "color": "#757575"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "poi.park",
+		    "elementType": "geometry",
+		    "stylers": [
+		      {
+		        "color": "#181818"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "poi.park",
+		    "elementType": "labels.text.fill",
+		    "stylers": [
+		      {
+		        "color": "#616161"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "poi.park",
+		    "elementType": "labels.text.stroke",
+		    "stylers": [
+		      {
+		        "color": "#1b1b1b"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "road",
+		    "elementType": "geometry.fill",
+		    "stylers": [
+		      {
+		        "color": "#2c2c2c"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "road",
+		    "elementType": "labels.icon",
+		    "stylers": [
+		      {
+		        "visibility": "off"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "road",
+		    "elementType": "labels.text.fill",
+		    "stylers": [
+		      {
+		        "color": "#8a8a8a"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "road.arterial",
+		    "elementType": "geometry",
+		    "stylers": [
+		      {
+		        "color": "#373737"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "road.highway",
+		    "elementType": "geometry",
+		    "stylers": [
+		      {
+		        "color": "#3c3c3c"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "road.highway.controlled_access",
+		    "elementType": "geometry",
+		    "stylers": [
+		      {
+		        "color": "#4e4e4e"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "road.local",
+		    "elementType": "labels.text.fill",
+		    "stylers": [
+		      {
+		        "color": "#616161"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "transit",
+		    "stylers": [
+		      {
+		        "visibility": "off"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "transit",
+		    "elementType": "labels.text.fill",
+		    "stylers": [
+		      {
+		        "color": "#757575"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "water",
+		    "elementType": "geometry",
+		    "stylers": [
+		      {
+		        "color": "#000000"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "water",
+		    "elementType": "labels.text.fill",
+		    "stylers": [
+		      {
+		        "color": "#3d3d3d"
+		      }
+		    ]
+		  }
+		],
+            {name: 'Styled Map'});
 		var ubicacion = {lat: 43.2919385, lng: -1.9867600999};
 
 		map = new google.maps.Map(document.getElementById('map'), {
 			center: ubicacion,
 			zoom: 15,
-			mapTypeId: google.maps.MapTypeId.ROADMAP,
-			mapTypeControl: false
+			mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                    'styled_map']
+            },
+			mapTypeControl: false,
+			//Para los controles: zoom, street view, etc.
+			zoomControl: true,
+			mapTypeControl: false,
+			scaleControl: false,
+			streetViewControl: false,
+			rotateControl: false,
+			fullscreenControl: true
 		});
+
+		//Associate the styled map with the MapTypeId and set it to display.
+        map.mapTypes.set('styled_map', styledMapType);
+        map.setMapTypeId('styled_map');
+
 		//creo el marcador con la posicion, el mapa, y el icono
 		marker = new google.maps.Marker({
 			map: map,
@@ -30,15 +264,15 @@
 			icon: getCircle('blue'),
 		});
 		
-		<!-- // Create a "highlighted location" marker color for when the user -->
-		<!-- // mouses over the marker. -->
-		<!-- var highlightedIcon = makeMarkerIcon('FFFF24'); -->
-		
-		<!-- // Two event listeners - one for mouseover, one for mouseout, -->
-		<!-- // to change the colors back and forth. -->
-		<!-- marker.addListener('mouseover', function() { -->
-		<!-- this.setIcon(highlightedIcon); -->
-	    <!-- }) -->
+		/*
+		// Create a "highlighted location" marker color for when the user 
+		// mouses over the marker. 
+		var highlightedIcon = makeMarkerIcon('FFFF24'); 		
+		// Two event listeners - one for mouseover, one for mouseout, 
+		// to change the colors back and forth.
+		marker.addListener('mouseover', function() {
+		this.setIcon(highlightedIcon); 
+	    }) */
 		
 		var directionsService = new google.maps.DirectionsService;
 		var directionsDisplay = new google.maps.DirectionsRenderer({
@@ -98,7 +332,8 @@
 		  }, function(response, status) {
 			if (status !== 'OK') {
 			  alert('Error was: ' + status);
-			} else {
+			}
+			else {
 			  var originList = response.originAddresses;
 			  var destinationList = response.destinationAddresses;
 			  var outputDiv = document.getElementById('output');
@@ -186,11 +421,30 @@
 		data.addRow([xaxis.toString(), elevations[i].elevation]);
 	  }
 
+	  var options = {
+	  	legend: 'none',
+		//titleY: 'Elevation (m)',
+		backgroundColor: {
+			stroke:'blue'
+		},
+		chartArea: {
+		    backgroundColor: 'white',
+		    /*width: 1050,
+		    height: 200,*/
+		    left: 50
+		},
+		colors:['black','#004411'],
+		/*dataOpacity: 1.0,*/
+		enableInteractivity: true,
+		fontSize: 14,
+		vAxis: {
+			//title:'Elevation (m)'
+		}
+	  };
+
 	  // Draw the chart using the data within its DIV.
-	  chart.draw(data, {
-		legend: 'none',
-		titleY: 'Elevation (m)'
-	  });
+	  chart.draw(data,options);
+	 
 	}
 	
 	// This function takes in a COLOR, and then creates a new marker

@@ -10,13 +10,13 @@
 		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 		<!-- Style -->
-		<link rel="stylesheet" href="/styles.css" />
+		<link rel="stylesheet" href="styles/styles.css" />
 		
 		<!-- Material design lite -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<script src="./mdl/material.min.js"></script>
-		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-cyan.min.css" />-->
-		<!-- <link rel="stylesheet" href="./material.min.css"> -->
+		<!--<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-cyan.min.css" />-->
+		<link rel="stylesheet" href="mdl/material.min.css">  
 	</head>
 
 	<?php 
@@ -33,9 +33,10 @@
 					<!-- Tabs -->
 					<!-- Tabs <div class="mdl-layout__tab-bar-container">-->
 					<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-						<a href="#scroll-tab_visualization" class="mdl-layout__tab ">VISUALIZATION</a>
-						<a href="#scroll-tab_database" class="mdl-layout__tab is-active">DATA BASE</a>
+						<a href="#scroll-tab_visualization" class="mdl-layout__tab is-active">VISUALIZATION</a>
 						<a href="#scroll-tab_configuration" class="mdl-layout__tab">CONFIGURATION</a>
+						<a href="#scroll-tab_database" class="mdl-layout__tab">DATA BASE</a>
+
 					</div>
 					<!--</div>">-->
 				</header>
@@ -51,19 +52,19 @@
 						*/
 					?>-->
 					<!-- Paneles menu-->
-					<section class="mdl-layout__tab-panel " id="scroll-tab_visualization">
+					<section class="mdl-layout__tab-panel is-active" id="scroll-tab_visualization">
 						<div class="page-content">
 						<?php include 'vis.php'; ?>
-						</div>
-					</section>
-					<section class="mdl-layout__tab-panel is-active" id="scroll-tab_database">
-						<div class="page-content">
-						<?php include 'db.php'; ?>
 						</div>
 					</section>
 					<section class="mdl-layout__tab-panel" id="scroll-tab_configuration">
 						<div class="page-content">
 						<?php include 'conf.php'; ?>
+						</div>
+					</section>
+					<section class="mdl-layout__tab-panel " id="scroll-tab_database">
+						<div class="page-content">
+						<?php include 'db.php'; ?>
 						</div>
 					</section>
 					<!--

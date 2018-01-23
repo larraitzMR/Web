@@ -2,6 +2,7 @@
 	//querys
 	$query_seleccionar_tiempos_por_corredor = "SELECT * FROM ".$bd_nombre.".tiempos WHERE idcorredor=?";
 	$query_obtener_corredores= "SELECT * FROM ".$bd_nombre.".corredores";
+	$query_obtener_participantes= "SELECT * FROM ".$bd_nombre.".participantes";
 	//fin querys
 
 	//funciones
@@ -37,6 +38,25 @@
 					$resultado[$i]['nombre'] = $corredor->nombre;
 					$resultado[$i]['apellido1'] = $corredor->apellido1;
 					$resultado[$i]['apellido2'] = $corredor->apellido2;
+					$i++;
+				}
+			}
+		}
+		return $resultado;
+	}
+
+	function obtener_tabla_participantes() {
+		global $MMac, $query_obtener_participantes;
+
+		$resultado = '';
+		if ($participantes = $MMac->ejecutar_query($query_obtener_participantes)) {
+			if (sizeof($participantes)>0) {
+				$resultado=array();
+				$i=0;
+				foreach ($participantes as $participante) {
+					$resultado[$i]['idcorredor'] = $participante->idcorredor;
+					$resultado[$i]['idcarrera'] = $participante->idcarrera;
+					$resultado[$i]['dorsal'] = $participante->dorsal;
 					$i++;
 				}
 			}

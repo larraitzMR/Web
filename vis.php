@@ -10,11 +10,10 @@
 <!-- Style -->
 <style>
 	#map {
-		height: 50%;
+		height: 60%;
 	}
 	#elevation_chart{ 
-		height: 30%;
-		width: 1150;
+		height: 33%;
 	} 
 </style>
 
@@ -22,10 +21,16 @@
 	<!-- Div Mapa -->
 	<div class="mapa_cell mdl-cell--6-col" >
 		<div id="map"></div>
-		<div id="elevation_chart"></div>
+		<div id="elevation_chart" onmouseout="clearMouseMarker()"></div>
 	</div>
+	<!-- Div separadores -->
+	<div id="separadorV" style="width: 15px; height: 750px; "></div>
+	<div id="separadorV" style="width: 10px; height: 750px; background-color: rgb(204,204,204);"></div>
+	<div id="separadorV" style="width: 5px; height: 750px; "></div>
 	<!-- Div circulos -->
 	<div class="inf_cell mdl-color--white mdl-cell--5-col ">
+		<div class="nombreCorredor" style="height: 60px; font-size:160%; padding-top: 10px; padding-left: 20px;"> RUNNER: LARRAITZ ORIO ZABALA
+		</div>
 		<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col">
 			<use xlink:href="#piechart" mask="url(#piemask)" />
 			<text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan>
@@ -43,11 +48,19 @@
 			<text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan>
 			</text>
 		</svg>
+		<div id="separadorH" style="height: 20px; "></div>
+		<div class="graf_seguimiento">
+			<img class="runner" src="runningman.png" style="height: 150px; padding-top: 10px; padding-left: 80px;" />
+			<img class="flecha" src="flecha.png" style="height: 140px; padding-left: 20px;"/>
+			<!-- <div class= container>
+				<img class="flecha" src="flecha.png" style="height: 140px; padding-left: 20px;"/>
+				<div class="text-block"> 
+				    <p>What a beautiful sunrise</p>
+				</div>
+			</div> -->
+			<img class="runner" src="runningman.png" style="height: 150px; padding-top: 10px; padding-left: 40px; " />
+		</div>
 	</div>
-	<!-- Div grafico altimetria -->
-	<!-- <div class="chart_cell mdl-cell--7-col" >
-		<div id="elevation_chart"></div>
-	</div> -->
 </div>
 
 <!-- Circulos de los graficos -->

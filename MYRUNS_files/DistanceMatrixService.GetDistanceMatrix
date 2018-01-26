@@ -1,0 +1,23 @@
+/**/_xdc_._y2b6s9 && _xdc_._y2b6s9( {
+   "destination_addresses" : [ "Zurríola Hiribidea, 26, 20002 Donostia, Gipuzkoa, España" ],
+   "origin_addresses" : [ "Mikeletegi Pasealekua, 83, 20009 Donostia, Gipuzkoa, España" ],
+   "rows" : [
+      {
+         "elements" : [
+            {
+               "distance" : {
+                  "text" : "5,2 km",
+                  "value" : 5230
+               },
+               "duration" : {
+                  "text" : "1h 6 min",
+                  "value" : 3979
+               },
+               "status" : "OK"
+            }
+         ]
+      }
+   ],
+   "status" : "OK"
+}
+ )

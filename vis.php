@@ -29,26 +29,48 @@
 	<div id="separadorV" style="width: 5px; height: 750px; "></div>
 	<!-- Div circulos -->
 	<div class="inf_cell mdl-color--white mdl-cell--5-col ">
-		<div class="nombreCorredor" style="height: 60px; font-size:160%; padding-top: 10px; padding-left: 20px;"> RUNNER: LARRAITZ ORIO ZABALA
+		<div id="nombreCorredor" style="height: 60px; font-size:160%; padding-top: 10px; padding-left: 20px;"> Runner:
 		</div>
-		<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col">
-			<use xlink:href="#piechart" mask="url(#piemask)" />
-			<text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan>
-			</text>
-		</svg>
-		<section class="sect"></section>
-		<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col">
-			<use xlink:href="#piechart" mask="url(#piemask)" />
-			<text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan>
-			</text>
-		</svg>
-		<section class="sect"></section>
-		<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col">
-			<use xlink:href="#piechart" mask="url(#piemask)" />
-			<text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan>
-			</text>
-		</svg>
-		<div id="separadorH" style="height: 20px; "></div>
+		<div class="graficos">
+			<svg fill="currentColor" width="200" height="200" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col" id="grafTiempo">
+				<use xlink:href="#piechart" mask="url(#piemask)" />
+				<!--<use xlink:href="#piechart" mask="url(#piemask)" />-->
+				<text x="0.5" y="0.43" font-family="Roboto" font-size="0.18" fill="#888" text-anchor="middle" dy="0.1" id="grafTiempoNum">01:02:03</text>
+				<text x="0.5" y="0.58" font-family="Roboto" font-size="0.1" fill="#888" text-anchor="middle" dy="0.1" id="grafTiempoLabel">Tiempo</text>
+			</svg>
+			<svg fill="currentColor" width="200" height="200" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col" id="grafRitmo">
+				<use xlink:href="#piechart" mask="url(#piemask)" />
+				<!--<use xlink:href="#piechart" mask="url(#piemask)" />-->
+				<text x="0.5" y="0.43" font-family="Roboto" font-size="0.18" fill="#888" text-anchor="middle" dy="0.1">3:56</text>
+				<text x="0.5" y="0.58" font-family="Roboto" font-size="0.09" fill="#888" text-anchor="middle" dy="0.1">Ritmo (min/km) </text>
+			</svg>
+			<svg fill="currentColor" width="200" height="200" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col" id="grafDistancia">
+				<use xlink:href="#piechart" mask="url(#piemask)" />
+				<!--<use xlink:href="#piechart" mask="url(#piemask)" />-->
+				<text x="0.5" y="0.43" font-family="Roboto" font-size="0.18" fill="#888" text-anchor="middle" dy="0.1">25,08</text>
+				<text x="0.5" y="0.58" font-family="Roboto" font-size="0.1" fill="#888" text-anchor="middle" dy="0.1">Distancia (km)</text>
+			</svg>
+
+			<!--
+			<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col">
+				<use xlink:href="#piechart" mask="url(#piemask)" />
+				<text x="0.5" y="0.5" font-family="Roboto" font-size="0.2" fill="#888" text-anchor="middle" dy="0.1">16:02:03<tspan font-size="0.1" dy="-0.07">tiempo</tspan>
+				</text>
+			</svg>
+			<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col">
+				<use xlink:href="#piechart" mask="url(#piemask)" />
+				<text x="0.5" y="0.5" font-family="Roboto" font-size="0.2" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.1" dy="-0.07">%</tspan>
+				</text>
+			</svg>
+
+			<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col">
+				<use xlink:href="#piechart" mask="url(#piemask)" />
+				<text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan>
+				</text>
+			</svg>
+			-->
+		</div>
+		<div id="separadorH" style="height: 50px; "></div>
 		<div class="graf_seguimiento">
 			<img class="runner" src="runningman.png" style="height: 150px; padding-top: 10px; padding-left: 80px;" />
 			<img class="flecha" src="flecha.png" style="height: 140px; padding-left: 20px;"/>
@@ -67,13 +89,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">
 	<defs>
 	  <mask id="piemask" maskContentUnits="objectBoundingBox">
-		<circle cx=0.5 cy=0.5 r=0.49 fill="white" />
+	  	<!-- Para rellenar lo de dentro del circulo -->
+		<circle cx=0.5 cy=0.5 r=0.44 fill="white" />
 		<circle cx=0.5 cy=0.5 r=0.40 fill="black" />
 	  </mask>
 	  <g id="piechart">
 		<circle cx=0.5 cy=0.5 r=0.5 />
 		<!-- Para rellenar el cacho que falta -->
-		<path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 0.75)" />
+		<!--<path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 1)" /> -->
 	  </g>
 	</defs>
 </svg>

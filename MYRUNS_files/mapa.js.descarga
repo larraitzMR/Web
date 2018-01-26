@@ -43,7 +43,15 @@
 		    "elementType": "geometry",
 		    "stylers": [
 		      {
-		        "color": "#242f3e"
+		        "color": "#212121"
+		      }
+		    ]
+		  },
+		  {
+		    "elementType": "labels.icon",
+		    "stylers": [
+		      {
+		        "visibility": "off"
 		      }
 		    ]
 		  },
@@ -51,7 +59,7 @@
 		    "elementType": "labels.text.fill",
 		    "stylers": [
 		      {
-		        "color": "#746855"
+		        "color": "#757575"
 		      }
 		    ]
 		  },
@@ -59,7 +67,36 @@
 		    "elementType": "labels.text.stroke",
 		    "stylers": [
 		      {
-		        "color": "#242f3e"
+		        "color": "#212121"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "administrative",
+		    "elementType": "geometry",
+		    "stylers": [
+		      {
+		        "color": "#757575"
+		      },
+		      {
+		        "visibility": "off"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "administrative.country",
+		    "elementType": "labels.text.fill",
+		    "stylers": [
+		      {
+		        "color": "#9e9e9e"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "administrative.land_parcel",
+		    "stylers": [
+		      {
+		        "visibility": "off"
 		      }
 		    ]
 		  },
@@ -68,7 +105,15 @@
 		    "elementType": "labels.text.fill",
 		    "stylers": [
 		      {
-		        "color": "#d59563"
+		        "color": "#bdbdbd"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "poi",
+		    "stylers": [
+		      {
+		        "visibility": "off"
 		      }
 		    ]
 		  },
@@ -77,39 +122,7 @@
 		    "elementType": "labels.text.fill",
 		    "stylers": [
 		      {
-		        "color": "#d59563"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "poi.attraction",
-		    "stylers": [
-		      {
-		        "visibility": "off"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "poi.business",
-		    "stylers": [
-		      {
-		        "visibility": "off"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "poi.government",
-		    "stylers": [
-		      {
-		        "visibility": "off"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "poi.medical",
-		    "stylers": [
-		      {
-		        "visibility": "off"
+		        "color": "#757575"
 		      }
 		    ]
 		  },
@@ -118,7 +131,7 @@
 		    "elementType": "geometry",
 		    "stylers": [
 		      {
-		        "color": "#263c3f"
+		        "color": "#181818"
 		      }
 		    ]
 		  },
@@ -127,50 +140,25 @@
 		    "elementType": "labels.text.fill",
 		    "stylers": [
 		      {
-		        "color": "#6b9a76"
+		        "color": "#616161"
 		      }
 		    ]
 		  },
 		  {
-		    "featureType": "poi.place_of_worship",
-		    "elementType": "labels",
+		    "featureType": "poi.park",
+		    "elementType": "labels.text.stroke",
 		    "stylers": [
 		      {
-		        "visibility": "off"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "poi.school",
-		    "stylers": [
-		      {
-		        "visibility": "off"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "poi.sports_complex",
-		    "stylers": [
-		      {
-		        "visibility": "off"
+		        "color": "#1b1b1b"
 		      }
 		    ]
 		  },
 		  {
 		    "featureType": "road",
-		    "elementType": "geometry",
+		    "elementType": "geometry.fill",
 		    "stylers": [
 		      {
-		        "color": "#38414e"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "road",
-		    "elementType": "geometry.stroke",
-		    "stylers": [
-		      {
-		        "color": "#212a37"
+		        "color": "#2c2c2c"
 		      }
 		    ]
 		  },
@@ -188,7 +176,16 @@
 		    "elementType": "labels.text.fill",
 		    "stylers": [
 		      {
-		        "color": "#9ca5b3"
+		        "color": "#8a8a8a"
+		      }
+		    ]
+		  },
+		  {
+		    "featureType": "road.arterial",
+		    "elementType": "geometry",
+		    "stylers": [
+		      {
+		        "color": "#373737"
 		      }
 		    ]
 		  },
@@ -197,25 +194,25 @@
 		    "elementType": "geometry",
 		    "stylers": [
 		      {
-		        "color": "#746855"
+		        "color": "#3c3c3c"
 		      }
 		    ]
 		  },
 		  {
-		    "featureType": "road.highway",
-		    "elementType": "geometry.stroke",
+		    "featureType": "road.highway.controlled_access",
+		    "elementType": "geometry",
 		    "stylers": [
 		      {
-		        "color": "#1f2835"
+		        "color": "#4e4e4e"
 		      }
 		    ]
 		  },
 		  {
-		    "featureType": "road.highway",
+		    "featureType": "road.local",
 		    "elementType": "labels.text.fill",
 		    "stylers": [
 		      {
-		        "color": "#f3d19c"
+		        "color": "#616161"
 		      }
 		    ]
 		  },
@@ -229,19 +226,10 @@
 		  },
 		  {
 		    "featureType": "transit",
-		    "elementType": "geometry",
-		    "stylers": [
-		      {
-		        "color": "#2f3948"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "transit.station",
 		    "elementType": "labels.text.fill",
 		    "stylers": [
 		      {
-		        "color": "#d59563"
+		        "color": "#757575"
 		      }
 		    ]
 		  },
@@ -250,7 +238,7 @@
 		    "elementType": "geometry",
 		    "stylers": [
 		      {
-		        "color": "#17263c"
+		        "color": "#000000"
 		      }
 		    ]
 		  },
@@ -259,16 +247,7 @@
 		    "elementType": "labels.text.fill",
 		    "stylers": [
 		      {
-		        "color": "#515c6d"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "water",
-		    "elementType": "labels.text.stroke",
-		    "stylers": [
-		      {
-		        "color": "#17263c"
+		        "color": "#3d3d3d"
 		      }
 		    ]
 		  }
@@ -350,7 +329,7 @@
 				position: ubi,
 				map: map,
 				draggable: false,
-				icon: getCircle('rgb(244, 246, 247)')
+				icon: getCircle('red')
 			});
 			marker.setMap(map);
 		}, 5000);
@@ -361,7 +340,7 @@
 		directionsService = new google.maps.DirectionsService;
 		directionsDisplay = new google.maps.DirectionsRenderer({
 			polylineOptions: {
-				strokeColor: 'rgb(46, 204, 113)',
+				strokeColor: "orange",
 				strokeWeight: 5
 			}, suppressMarkers: false
 		});
@@ -395,14 +374,6 @@
 		var first = new google.maps.LatLng(43.29295, -1.97122 );
 		var second = new google.maps.LatLng(43.285957, -1.985465);
 
-		// Create a PathElevationRequest object using this array.
-		// Ask for 256 samples along that path.
-		// Initiate the path request.
-		elevator.getElevationAlongPath({
-		'path': path,
-		'samples': 400
-		}, plotElevation);
-
 		directionsService.route({
 		origin: {
 		  lat: 43.2919385,
@@ -426,12 +397,21 @@
 		  window.alert('Directions request failed due to ' + status);
 		}
 		});
+		
+		// Create a PathElevationRequest object using this array.
+		// Ask for 256 samples along that path.
+		// Initiate the path request.
+		elevator.getElevationAlongPath({
+		'path': path,
+		'samples': 400
+		}, plotElevation);
 	}
 	
 	/* Funcion para dibujar el grafico */
 	function plotElevation(results) {
 		elevations = results;
 		
+
 		var path = [];
 	    for (var i = 0; i < elevations.length; i++) {
 	      path.push(elevations[i].location);
@@ -450,10 +430,8 @@
 		data.addColumn('string', 'Sample');
 		 //dataTable.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
 		data.addColumn('number', 'Elevation');
-		var j = 0;
-		for (var i = elevations.length - 1; i >= 0; i--) {
-			var x = ((j*distancia)/400)/1000; 
-			j++;
+		for (var i = 0; i < elevations.length; i++) {
+			var x = ((i*distancia)/400)/1000; 
 			//var x = (i*(distancia)/400; 
 			var xaxis = Math.round(x);
 			data.addRow([xaxis.toString(), elevations[i].elevation]);
@@ -471,7 +449,7 @@
 			    height: 200,*/
 			    left: 50
 			},
-			colors:['green'],
+			colors:['black'],
 			/*dataOpacity: 1.0,*/
 			enableInteractivity: true,
 			fontSize: 14,

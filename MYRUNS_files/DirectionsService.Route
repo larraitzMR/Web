@@ -1,0 +1,469 @@
+/**/_xdc_._1b1nnq && _xdc_._1b1nnq( {
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJq1KR69-vUQ0RiSu-DVijAAs",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJZ9p9UUSlUQ0RnnNf_gNnmxc",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 43.3252757,
+               "lng" : -1.9758718
+            },
+            "southwest" : {
+               "lat" : 43.2919847,
+               "lng" : -1.9929807
+            }
+         },
+         "copyrights" : "Datos de mapas ©2018 Ayuntamiento de San Sebastian, Google, Inst. Geogr. Nacional",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "5,2 km",
+                  "value" : 5230
+               },
+               "duration" : {
+                  "text" : "1h 6 min",
+                  "value" : 3979
+               },
+               "end_address" : "Zurríola Hiribidea, 26, 20002 Donostia, Gipuzkoa, España",
+               "end_location" : {
+                  "lat" : 43.3252757,
+                  "lng" : -1.9758718
+               },
+               "start_address" : "Mikeletegi Pasealekua, 83, 20009 Donostia, Gipuzkoa, España",
+               "start_location" : {
+                  "lat" : 43.2919847,
+                  "lng" : -1.987185
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "45 m",
+                        "value" : 45
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 33
+                     },
+                     "end_location" : {
+                        "lat" : 43.2923869,
+                        "lng" : -1.9871025
+                     },
+                     "html_instructions" : "Dirígete al \u003cb\u003enorte\u003c/b\u003e por \u003cb\u003eMikeletegi Pasealekua\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "{mfgG|bcKqAQ"
+                     },
+                     "start_location" : {
+                        "lat" : 43.2919847,
+                        "lng" : -1.987185
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,3 km",
+                        "value" : 329
+                     },
+                     "duration" : {
+                        "text" : "6 min",
+                        "value" : 356
+                     },
+                     "end_location" : {
+                        "lat" : 43.29387639999999,
+                        "lng" : -1.9898747
+                     },
+                     "html_instructions" : "Gira a la \u003cb\u003eizquierda\u003c/b\u003e.",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "mpfgGjbcKSd@CDIF_@Ne@Lm@Jg@AA?A@?@A@?B@|B@`C?FA?ADYf@K^EXEXABCFMP[XC@"
+                     },
+                     "start_location" : {
+                        "lat" : 43.2923869,
+                        "lng" : -1.9871025
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,4 km",
+                        "value" : 428
+                     },
+                     "duration" : {
+                        "text" : "6 min",
+                        "value" : 338
+                     },
+                     "end_location" : {
+                        "lat" : 43.2967238,
+                        "lng" : -1.9907868
+                     },
+                     "html_instructions" : "Gira a la \u003cb\u003ederecha\u003c/b\u003e hacia \u003cb\u003eOriamendi Pasealekua\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "wyfgGtscKA@A?CAACKQGWGYKc@CGGGMGSAU?QAC?g@M{A_@m@CC@g@PSNGFEJCHCPe@xC?@MZGFMHC@_@NGDILILY^"
+                     },
+                     "start_location" : {
+                        "lat" : 43.29387639999999,
+                        "lng" : -1.9898747
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "55 m",
+                        "value" : 55
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 45
+                     },
+                     "end_location" : {
+                        "lat" : 43.2970153,
+                        "lng" : -1.9913308
+                     },
+                     "html_instructions" : "Continúa por \u003cb\u003eOriamendi Pasealekua\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "okggGlycKCJCDGPOV[n@"
+                     },
+                     "start_location" : {
+                        "lat" : 43.2967238,
+                        "lng" : -1.9907868
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,5 km",
+                        "value" : 461
+                     },
+                     "duration" : {
+                        "text" : "6 min",
+                        "value" : 369
+                     },
+                     "end_location" : {
+                        "lat" : 43.3009732,
+                        "lng" : -1.9903119
+                     },
+                     "html_instructions" : "En la rotonda, toma la \u003cb\u003eprimera\u003c/b\u003e salida y continúa por \u003cb\u003eOriamendi Pasealekua\u003c/b\u003e",
+                     "maneuver" : "roundabout-right",
+                     "polyline" : {
+                        "points" : "kmggGx|cKA?A??@A?OCCAICQGYGC?QCUAS@S@E@wANc@Da@Ds@BS?WA]AO?c@WgAm@sAw@_CqA"
+                     },
+                     "start_location" : {
+                        "lat" : 43.2970153,
+                        "lng" : -1.9913308
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "42 m",
+                        "value" : 42
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 31
+                     },
+                     "end_location" : {
+                        "lat" : 43.3013408,
+                        "lng" : -1.9901721
+                     },
+                     "html_instructions" : "Gira ligeramente a la \u003cb\u003eizquierda\u003c/b\u003e para continuar en \u003cb\u003eOriamendi Pasealekua\u003c/b\u003e",
+                     "maneuver" : "turn-slight-left",
+                     "polyline" : {
+                        "points" : "afhgGlvcK_@KQGWG"
+                     },
+                     "start_location" : {
+                        "lat" : 43.3009732,
+                        "lng" : -1.9903119
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,5 km",
+                        "value" : 536
+                     },
+                     "duration" : {
+                        "text" : "7 min",
+                        "value" : 425
+                     },
+                     "end_location" : {
+                        "lat" : 43.3056463,
+                        "lng" : -1.9929711
+                     },
+                     "html_instructions" : "En la rotonda, toma la \u003cb\u003eprimera\u003c/b\u003e salida en dirección \u003cb\u003eAiete Pasealekua\u003c/b\u003e",
+                     "maneuver" : "roundabout-right",
+                     "polyline" : {
+                        "points" : "khhgGpucK?@A?A??@A?A?A?A?A?AAA??AA??AA??AOBWFw@b@YJOJIFA@GDC@c@Z]Tk@`@q@d@aEzCGDe@`@OJYPKFUPg@ZWNIDKDUHCDQF_@Jg@F"
+                     },
+                     "start_location" : {
+                        "lat" : 43.3013408,
+                        "lng" : -1.9901721
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,2 km",
+                        "value" : 191
+                     },
+                     "duration" : {
+                        "text" : "2 min",
+                        "value" : 128
+                     },
+                     "end_location" : {
+                        "lat" : 43.3073235,
+                        "lng" : -1.9926036
+                     },
+                     "html_instructions" : "Gira ligeramente a la \u003cb\u003ederecha\u003c/b\u003e para continuar por \u003cb\u003eAiete Pasealekua\u003c/b\u003e",
+                     "maneuver" : "turn-slight-right",
+                     "polyline" : {
+                        "points" : "icigG`gdKGEy@FE?SAG?M?_@G]G_@Eu@OIE}@]"
+                     },
+                     "start_location" : {
+                        "lat" : 43.3056463,
+                        "lng" : -1.9929711
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,5 km",
+                        "value" : 502
+                     },
+                     "duration" : {
+                        "text" : "6 min",
+                        "value" : 362
+                     },
+                     "end_location" : {
+                        "lat" : 43.3110378,
+                        "lng" : -1.9894367
+                     },
+                     "html_instructions" : "Mantente a la \u003cb\u003ederecha\u003c/b\u003e para permanecer en \u003cb\u003eAiete Pasealekua\u003c/b\u003e",
+                     "maneuver" : "keep-right",
+                     "polyline" : {
+                        "points" : "wmigGvddK[IWMUIeB}@_A_@WMA?AAc@QECCCuBkAa@Sk@Yk@_@a@[QMIIEGEGKYEKGSK]CECGKYMa@Qg@O[GGAA"
+                     },
+                     "start_location" : {
+                        "lat" : 43.3073235,
+                        "lng" : -1.9926036
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1,0 km",
+                        "value" : 955
+                     },
+                     "duration" : {
+                        "text" : "11 min",
+                        "value" : 636
+                     },
+                     "end_location" : {
+                        "lat" : 43.3162416,
+                        "lng" : -1.9833948
+                     },
+                     "html_instructions" : "Continúa por \u003cb\u003eAldapeta Galtzada\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePasa una rotonda\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "_ejgG~pcKOKCAOGMCM?QDa@Pc@POFSJIDe@XuAx@i@ZOJMFQDG@G@QBO?MAQCIEIEEAWUCEEECECECMAICMEUIi@G[M{@Y_BCSCKE[Gi@Gu@Eg@KmACc@G]Gc@CM]iA[s@EGEMGUA?A?A?AAA??AA??A?AA??A?AAA?A?A?A?A?A@??AQOKMaAoBq@uAUc@K_@W}@K]Sw@CO"
+                     },
+                     "start_location" : {
+                        "lat" : 43.3110378,
+                        "lng" : -1.9894367
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "70 m",
+                        "value" : 70
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 51
+                     },
+                     "end_location" : {
+                        "lat" : 43.3168085,
+                        "lng" : -1.9837684
+                     },
+                     "html_instructions" : "Gira a la \u003cb\u003eizquierda\u003c/b\u003e hacia \u003cb\u003eEaso Kalea\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "oekgGdkbKEBEDuAt@OJ"
+                     },
+                     "start_location" : {
+                        "lat" : 43.3162416,
+                        "lng" : -1.9833948
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,4 km",
+                        "value" : 425
+                     },
+                     "duration" : {
+                        "text" : "5 min",
+                        "value" : 310
+                     },
+                     "end_location" : {
+                        "lat" : 43.318553,
+                        "lng" : -1.9790995
+                     },
+                     "html_instructions" : "Gira a la \u003cb\u003ederecha\u003c/b\u003e hacia \u003cb\u003eSan Martin Kalea\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "aikgGpmbK}@qD_@mACICMOs@EMQk@Me@U_As@kCGUa@oA[eAEQWw@Qw@"
+                     },
+                     "start_location" : {
+                        "lat" : 43.3168085,
+                        "lng" : -1.9837684
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,2 km",
+                        "value" : 232
+                     },
+                     "duration" : {
+                        "text" : "3 min",
+                        "value" : 177
+                     },
+                     "end_location" : {
+                        "lat" : 43.3205943,
+                        "lng" : -1.9792035
+                     },
+                     "html_instructions" : "Gira a la \u003cb\u003eizquierda\u003c/b\u003e hacia \u003cb\u003eForu Pasealekua\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "}skgGjpaKKNGDGBK@Y?a@GG?]CiAMe@?Q@YBe@Bo@HC?G?OA"
+                     },
+                     "start_location" : {
+                        "lat" : 43.318553,
+                        "lng" : -1.9790995
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,3 km",
+                        "value" : 330
+                     },
+                     "duration" : {
+                        "text" : "4 min",
+                        "value" : 265
+                     },
+                     "end_location" : {
+                        "lat" : 43.3232614,
+                        "lng" : -1.9807465
+                     },
+                     "html_instructions" : "Continúa por \u003cb\u003eDe España Plaza\u003c/b\u003e/\u003cb\u003eRepública Argentina Kalea\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eContinúa hacia República Argentina Kalea\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "u`lgG~paKUIKGEAE?G@KDCBIFsAv@GDc@XYNaBbAaAn@iAr@IDMNe@N"
+                     },
+                     "start_location" : {
+                        "lat" : 43.3205943,
+                        "lng" : -1.9792035
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,1 km",
+                        "value" : 124
+                     },
+                     "duration" : {
+                        "text" : "2 min",
+                        "value" : 90
+                     },
+                     "end_location" : {
+                        "lat" : 43.3237292,
+                        "lng" : -1.979358
+                     },
+                     "html_instructions" : "Gira a la \u003cb\u003ederecha\u003c/b\u003e hacia \u003cb\u003eZurriolako Zubia\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "kqlgGtzaKEYwA{F"
+                     },
+                     "start_location" : {
+                        "lat" : 43.3232614,
+                        "lng" : -1.9807465
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,2 km",
+                        "value" : 153
+                     },
+                     "duration" : {
+                        "text" : "2 min",
+                        "value" : 108
+                     },
+                     "end_location" : {
+                        "lat" : 43.3249772,
+                        "lng" : -1.9801684
+                     },
+                     "html_instructions" : "Gira a la \u003cb\u003eizquierda\u003c/b\u003e hacia \u003cb\u003eJesus M. Leizaola Ibilbidea\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "itlgG~qaKYNkCzA{@f@WL"
+                     },
+                     "start_location" : {
+                        "lat" : 43.3237292,
+                        "lng" : -1.979358
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,4 km",
+                        "value" : 352
+                     },
+                     "duration" : {
+                        "text" : "4 min",
+                        "value" : 255
+                     },
+                     "end_location" : {
+                        "lat" : 43.3252757,
+                        "lng" : -1.9758718
+                     },
+                     "html_instructions" : "Gira a la \u003cb\u003ederecha\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eEl destino está a la izquierda.\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "c|lgG`waKAqA?aCGgBEeC?aA?oAKyCGc@Ia@Mg@"
+                     },
+                     "start_location" : {
+                        "lat" : 43.3249772,
+                        "lng" : -1.9801684
+                     },
+                     "travel_mode" : "WALKING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "{mfgG|bcKqAQSd@MLeA\\m@Jg@AC@ABBjGCDYf@K^Kr@EJm@l@C@EESi@S}@KOMGSAg@Ak@M{A_@m@Ck@R[VITi@jDM\\UPc@PQRc@l@GPWh@]n@SAy@Uk@Em@D{BTuAHyAC_IoEiAYE@KACEg@JqAn@[To@b@}HxFwAdAaBdAUJYNq@Rg@FGE_AF[AkBU_AUyAg@m@WeB}@_A_@YMAAi@UyBoAmAm@mA{@[WKOe@wAa@iAa@cAIISM]K_@DeAb@sAr@}ChBs@L]A[IOG[[Q_@UwAs@kEYgC]wDKq@]iA[s@KUGUA?C?AAEEAG@I]]sBeEa@cA{@cDaB~@OJ}@qDc@wAk@{B_BgG{A_FQw@KNOHe@@i@GgBQw@@sBPG?OAUIQIM@mBhAgDrBkCbBWTe@NEYwA{FYNgEbCWLAqA?aCGgBEgEKiFQeAMg@"
+         },
+         "summary" : "Aiete Pasealekua",
+         "warnings" : [
+            "Las rutas a pie están en versión beta. Ten cuidado. –  En esta ruta puede que no haya aceras o pasos para peatones."
+         ],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
+ )

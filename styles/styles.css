@@ -22,15 +22,15 @@
 		height: 745px;
 		padding: 5px;
 	}
-	.inf_graf:nth-child(1) {
-	  color: #ACEC00;
+	/*.inf_graf:nth-child(1) {
+	  color: #00ec85;
 	}
-	.inf_graf:nth-child(2) {
-	  color: #00BBD6;
+	.grafTiempo {
+	  color: #0079ec;
 	}
 	.inf_graf:nth-child(3) {
-	  color: #BA65C9;
-	}
+	  color: #9800ff;
+	}*/
 		/* Centered text */
 	.container {
 	    position: relative;
@@ -44,6 +44,18 @@
 	    color: black;
 	    padding-left: 20px;
 	    padding-right: 20px;
+	}
+	.layoutDerecho {
+		float: left;
+  		width: 500px;
+	}
+	.layoutDerecho #graficos {
+		float: left;
+  		width: 15%;
+	}
+	.layoutDerecho #dorsal {
+		float: left;
+  		width: 150px;
 	}
 	.graf_seguimiento {
 		border:2px solid #000; 
@@ -67,6 +79,11 @@
 		height: 50px;
     	padding: 20px;
 	}
+	.mdl-layout__container.has-scrolling-header .mdl-layout--fixed-header .mdl-layout__content {
+		overflow-y: visible;
+		overflow-x: visible;
+		overflow: visible;
+	}
 	/* Optional: Makes the sample page fill the window. */
 	html, body {
 		height: 100%;	
@@ -75,6 +92,6 @@
 		/*background-color: rgb(33,150,243) !important;*/
 	}
 	#elevation_chart svg {
-		width: 950px !important;
+		width: 900px !important;
 	}
 }

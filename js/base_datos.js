@@ -31,7 +31,7 @@
 				console.log(nombre + " " + apellido1 + " " + apellido2); 
 
 				$('#infopersona').text(nombre + " " + apellido1 + " " + apellido2);
-				$('#nombreCorredor').text(nombre + " " + apellido1 + " " + apellido2);
+				$('#nombreCorredor').text("Runner: " + nombre + " " + apellido1 + " " + apellido2);
 				$('#configuracion').show();
 				$('#grafTiempoNum').text("01:02:03");
 			});

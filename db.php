@@ -36,19 +36,25 @@
 		<div id="infopersona" style="font-size: 25px; padding-top: 20px">
 		</div>
 		<div class="listaConfig">
-			<ul id="configuracion" class="demo-list-item mdl-list" style="display: none;"">
+			<ul id="configuracion" class="demo-list-item mdl-list" style="display: none;">
 				<li class="mdl-list__item">
 					<span class="mdl-list__item-primary-content">
 						<p>Estado Bateria: </p> 
 						<br>
 					</span>
+				</li>
+				<li class="mdl-list__item">
 					<span class="mdl-list__item-primary-content">
-						<p>Frecuencia envío: </p> 
+						<p>Frecuencia envío:  </p> 
 						<form action="">
 							<p>
-							<input type="radio" name="frecEnvio" value="3"> 3 min<br>
-							<input type="radio" name="frecEnvio" value="6"> 6 min<br>
-							<input type="radio" name="frecEnvio" value="9"> 9 min
+							<label><input type="radio" name="frecEnvio" value="3"> 3 min</label>
+							<label><input type="radio" name="frecEnvio" value="5"> 5 min</label>
+							<label><input type="radio" name="frecEnvio" value="7"> 7 min</label>
+							<label><input type="radio" name="frecEnvio" value="10"> 10 min</label>
+							<label><input type="radio" name="frecEnvio" value="15"> 15 min</label>
+							<label><input type="radio" name="frecEnvio" value="20"> 20 min</label>
+							<label><input type="radio" name="frecEnvio" value="25"> 25 min</label>
 							</p>
 						</form> 
 					</span>

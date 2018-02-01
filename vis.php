@@ -32,23 +32,23 @@
 		<div id="nombreCorredor" style="height: 60px; font-size:160%; padding-top: 10px; padding-left: 20px;"> Runner:
 		</div>
 		<div class="graficos">
-			<svg fill="currentColor" width="200" height="200" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col" id="grafTiempo">
+			<svg fill="currentColor" color= "#00ec85" width="200" height="200" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col" id="grafTiempo">
 				<use xlink:href="#piechart" mask="url(#piemask)" />
 				<!--<use xlink:href="#piechart" mask="url(#piemask)" />-->
 				<text x="0.5" y="0.43" font-family="Roboto" font-size="0.18" fill="#888" text-anchor="middle" dy="0.1" id="grafTiempoNum">01:02:03</text>
-				<text x="0.5" y="0.58" font-family="Roboto" font-size="0.1" fill="#888" text-anchor="middle" dy="0.1" id="grafTiempoLabel">Tiempo</text>
+				<text x="0.5" y="0.58" font-family="Roboto" font-size="0.09" fill="#888" text-anchor="middle" dy="0.1" id="grafTiempoLabel">Tiempo</text>
 			</svg>
-			<svg fill="currentColor" width="200" height="200" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col" id="grafRitmo">
+			<svg fill="currentColor" color= "#0079ec" width="200" height="200" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col" id="grafRitmo">
 				<use xlink:href="#piechart" mask="url(#piemask)" />
 				<!--<use xlink:href="#piechart" mask="url(#piemask)" />-->
 				<text x="0.5" y="0.43" font-family="Roboto" font-size="0.18" fill="#888" text-anchor="middle" dy="0.1">3:56</text>
 				<text x="0.5" y="0.58" font-family="Roboto" font-size="0.09" fill="#888" text-anchor="middle" dy="0.1">Ritmo (min/km) </text>
 			</svg>
-			<svg fill="currentColor" width="200" height="200" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col" id="grafDistancia">
+			<svg fill="currentColor" color= "#9800ff" width="200" height="200" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col" id="grafDistancia">
 				<use xlink:href="#piechart" mask="url(#piemask)" />
 				<!--<use xlink:href="#piechart" mask="url(#piemask)" />-->
 				<text x="0.5" y="0.43" font-family="Roboto" font-size="0.18" fill="#888" text-anchor="middle" dy="0.1">25,08</text>
-				<text x="0.5" y="0.58" font-family="Roboto" font-size="0.1" fill="#888" text-anchor="middle" dy="0.1">Distancia (km)</text>
+				<text x="0.5" y="0.58" font-family="Roboto" font-size="0.09" fill="#888" text-anchor="middle" dy="0.1">Distancia (km)</text>
 			</svg>
 
 			<!--
@@ -70,7 +70,7 @@
 			</svg>
 			-->
 		</div>
-		<div id="separadorH" style="height: 50px; "></div>
+		<div id="separadorH" style="height: 250px;"></div>
 		<div class="graf_seguimiento">
 			<img class="runner" src="runningman.png" style="height: 150px; padding-top: 10px; padding-left: 80px;" />
 			<img class="flecha" src="flecha.png" style="height: 140px; padding-left: 20px;"/>

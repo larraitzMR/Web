@@ -18,7 +18,7 @@
 				<option value="tiempos">tiempos</option>
 			</select>
 		</div>
-		<div class="tablaBD " >
+		<div class="tablaBD" style=" text-align: center;">
 			<table id="tabla_generica" class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--4dp">
 				<thead>
 				</thead>
@@ -39,12 +39,6 @@
 			<ul id="configuracion" class="demo-list-item mdl-list" style="display: none;">
 				<li class="mdl-list__item">
 					<span class="mdl-list__item-primary-content">
-						<p>Estado Bateria: </p> 
-						<br>
-					</span>
-				</li>
-				<li class="mdl-list__item">
-					<span class="mdl-list__item-primary-content">
 						<p>Frecuencia envío:  </p> 
 						<form action="">
 							<p>
@@ -57,6 +51,17 @@
 							<label><input type="radio" name="frecEnvio" value="25"> 25 min</label>
 							</p>
 						</form> 
+					</span>
+				</li>
+				<li class="mdl-list__item">
+					<span class="mdl-list__item-primary-content">
+						<p>Estado batería: </p> 
+						<img class="bateria" src="images/bateria100.png" style="height: 125px; padding-left: 10" />
+						<img class="bateria" src="images/bateria80.png" style="height: 125px; " />
+						<img class="bateria" src="images/bateria60.png" style="height: 125px; " />
+						<img class="bateria" src="images/bateria40.png" style="height: 125px; " />
+						<img class="bateria" src="images/bateria20.png" style="height: 125px; " />
+
 					</span>
 				</li>
 			</ul>

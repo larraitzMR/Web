@@ -28,7 +28,7 @@
 			<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 				<header class="mdl-layout__header ">
 					<div class="mdl-layout__header-row">
-						<img class="logo" src="myruns-blanco_rec.png"  />
+						<img class="logo" src="images/myruns-blanco_rec.png"  />
 					</div>
 					<!-- Tabs -->
 					<!-- Tabs <div class="mdl-layout__tab-bar-container">-->
@@ -36,7 +36,9 @@
 						<a href="#scroll-tab_visualization" class="mdl-layout__tab is-active">VISUALIZATION</a>
 						<a href="#scroll-tab_configuration" class="mdl-layout__tab">CONFIGURATION</a>
 						<a href="#scroll-tab_database" class="mdl-layout__tab">DATA BASE</a>
-
+						<a href="#scroll-tab_init" class="mdl-layout__tab">PANTALLAS</a>
+						<a href="#scroll-tab_init2" class="mdl-layout__tab">PANTALLAS2</a>
+						<a href="#scroll-tab_sign" class="mdl-layout__tab">SIGN IN</a>
 					</div>
 					<!--</div>">-->
 				</header>
@@ -65,6 +67,21 @@
 					<section class="mdl-layout__tab-panel " id="scroll-tab_database">
 						<div class="page-content">
 						<?php include 'db.php'; ?>
+						</div>
+					</section>
+					<section class="mdl-layout__tab-panel " id="scroll-tab_init">
+						<div class="page-content">
+						<?php include 'init.php'; ?>
+						</div>
+					</section>
+					<section class="mdl-layout__tab-panel " id="scroll-tab_init2">
+						<div class="page-content">
+						<?php include 'init2.php'; ?>
+						</div>
+					</section>					
+					<section class="mdl-layout__tab-panel " id="scroll-tab_sign">
+						<div class="page-content">
+						<?php include 'sign_in.php'; ?>
 						</div>
 					</section>
 					<!--

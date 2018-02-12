@@ -1,0 +1,7 @@
+AT+CREG?
+AT+COPS=?
+AT+COPS=4,2,"42502"
+AT+CGREG?
+AT+CGDCONT=1,"IP","internetm2m.air.com"
+AT#SGACT=1,1
+#SGACT: 100.98.215.203

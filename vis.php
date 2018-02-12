@@ -14,6 +14,8 @@
 	}
 	#elevation_chart{ 
 		height: 33%;
+		border:1px solid #000;
+
 	} 
 </style>
 
@@ -32,55 +34,33 @@
 		<div id="nombreCorredor" style="height: 60px; font-size:160%; padding-top: 10px; padding-left: 20px;"> Runner:
 		</div>
 		<div class="graficos">
-			<svg fill="currentColor" color= "#00ec85" width="200" height="200" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col" id="grafTiempo">
+			<svg fill="currentColor" color= "#00ec85" width="180" height="180" viewBox="0 0 1 1" class="inf_graf" id="grafTiempo" style="padding-left: 40px" >
 				<use xlink:href="#piechart" mask="url(#piemask)" />
-				<!--<use xlink:href="#piechart" mask="url(#piemask)" />-->
-				<text x="0.5" y="0.43" font-family="Roboto" font-size="0.18" fill="#888" text-anchor="middle" dy="0.1" id="grafTiempoNum">01:02:03</text>
-				<text x="0.5" y="0.58" font-family="Roboto" font-size="0.09" fill="#888" text-anchor="middle" dy="0.1" id="grafTiempoLabel">Tiempo</text>
+				<text x="0.5" y="0.43" font-family="Roboto" font-size="0.17" fill="#666" text-anchor="middle" dy="0.1" id="grafTiempoNum">01:02:03</text>
+				<text x="0.5" y="0.58" font-family="Roboto" font-size="0.09" fill="#666" text-anchor="middle" dy="0.1" id="grafTiempoLabel">Tiempo</text>
 			</svg>
-			<svg fill="currentColor" color= "#0079ec" width="200" height="200" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col" id="grafRitmo">
+			<svg fill="currentColor" color= "#0079ec" width="180" height="180" viewBox="0 0 1 1" class="inf_graf" id="grafRitmo">
 				<use xlink:href="#piechart" mask="url(#piemask)" />
-				<!--<use xlink:href="#piechart" mask="url(#piemask)" />-->
-				<text x="0.5" y="0.43" font-family="Roboto" font-size="0.18" fill="#888" text-anchor="middle" dy="0.1">3:56</text>
-				<text x="0.5" y="0.58" font-family="Roboto" font-size="0.09" fill="#888" text-anchor="middle" dy="0.1">Ritmo (min/km) </text>
+				<text x="0.5" y="0.43" font-family="Roboto" font-size="0.17" fill="#666" text-anchor="middle" dy="0.1">3:56</text>
+				<text x="0.5" y="0.58" font-family="Roboto" font-size="0.09" fill="#666" text-anchor="middle" dy="0.1">Ritmo (min/km) </text>
 			</svg>
-			<svg fill="currentColor" color= "#9800ff" width="200" height="200" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col" id="grafDistancia">
+			<svg fill="currentColor" color= "#e83c3c" width="180" height="180" viewBox="0 0 1 1" class="inf_graf" id="grafDistancia">
 				<use xlink:href="#piechart" mask="url(#piemask)" />
-				<!--<use xlink:href="#piechart" mask="url(#piemask)" />-->
-				<text x="0.5" y="0.43" font-family="Roboto" font-size="0.18" fill="#888" text-anchor="middle" dy="0.1">25,08</text>
-				<text x="0.5" y="0.58" font-family="Roboto" font-size="0.09" fill="#888" text-anchor="middle" dy="0.1">Distancia (km)</text>
+				<text x="0.5" y="0.43" font-family="Roboto" font-size="0.17" fill="#666" text-anchor="middle" dy="0.1">25,08</text>
+				<text x="0.5" y="0.58" font-family="Roboto" font-size="0.09" fill="#666" text-anchor="middle" dy="0.1">Distancia (km)</text>
 			</svg>
-
-			<!--
-			<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col">
-				<use xlink:href="#piechart" mask="url(#piemask)" />
-				<text x="0.5" y="0.5" font-family="Roboto" font-size="0.2" fill="#888" text-anchor="middle" dy="0.1">16:02:03<tspan font-size="0.1" dy="-0.07">tiempo</tspan>
-				</text>
-			</svg>
-			<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col">
-				<use xlink:href="#piechart" mask="url(#piemask)" />
-				<text x="0.5" y="0.5" font-family="Roboto" font-size="0.2" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.1" dy="-0.07">%</tspan>
-				</text>
-			</svg>
-
-			<svg fill="currentColor" width="125px" height="125px" viewBox="0 0 1 1" class="inf_graf mdl-cell mdl-cell--4-col">
-				<use xlink:href="#piechart" mask="url(#piemask)" />
-				<text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan>
-				</text>
-			</svg>
-			-->
 		</div>
-		<div id="separadorH" style="height: 250px;"></div>
+		<div id="separadorH" style="height: 280px;"></div>
 		<div class="graf_seguimiento">
-			<img class="runner" src="runningman.png" style="height: 150px; padding-top: 10px; padding-left: 80px;" />
-			<img class="flecha" src="flecha.png" style="height: 140px; padding-left: 20px;"/>
+			<img class="runner" src="images/runningman.png" style="height: 150px; padding-top: 10px; padding-left: 80px;" />
+			<img class="flecha" src="images/flecha.png" style="height: 140px; padding-left: 20px;"/>
 			<!-- <div class= container>
 				<img class="flecha" src="flecha.png" style="height: 140px; padding-left: 20px;"/>
 				<div class="text-block"> 
 				    <p>What a beautiful sunrise</p>
 				</div>
 			</div> -->
-			<img class="runner" src="runningman.png" style="height: 150px; padding-top: 10px; padding-left: 40px; " />
+			<img class="runner" src="images/runningman.png" style="height: 150px; padding-top: 10px; padding-left: 40px; " />
 		</div>
 	</div>
 </div>

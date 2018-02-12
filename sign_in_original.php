@@ -1,3 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>MYRUNS</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+<!-- General javascript code -->
+<script type="text/javascript" src="/shared/js/myruns_readers_api.js"></script>
+
+<!-- Style -->
+<link rel="stylesheet" href="/styles.css" />
+
+<!-- JQuery Migrate -->
+<script src="/shared/includes/libraries/jquery-migrate-1.4.1.min.js"></script>
+
+<!-- Jquery UI -->
+<link href="/shared/includes/libraries/jquery-ui/jquery-ui.css" rel="stylesheet">
+<script src="/shared/includes/libraries/jquery-ui/jquery-ui.js"></script>
+
+<script src="/shared/includes/libraries/html2canvas.js"></script>
+
+<!-- Material design lite -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="./mdl/material.min.js"></script>
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-cyan.min.css" />
+
  
 
 <!-- Google analytics -->
@@ -20,7 +57,7 @@
 
 <div class="mdl-card mdl-shadow--2dp center" style="margin-top: 5em;">
   <div class="mdl-card__title mdl-card--expand">
-        <img src="/images/myruns.png" class="center" style="max-width: 90%;">
+        <img src="/shared/img/logo_blue_256.png" class="center" style="max-width: 90%;">
   </div>
   <div class="mdl-card__supporting-text">
 

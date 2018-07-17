@@ -1,13 +1,14 @@
 
 // Load the Visualization API and the columnchart package.
-google.load('visualization', '1', {packages: ['corechart']});
+//google.load('visualization', '1', {packages: ['corechart']});
+google.load('visualization', '1', {packages: ['columnchart']});
 //google.charts.setOnLoadCallback(drawChart);	
 var marker;
 var map;
 var coor, hora, latitud, longitud 
 var latLag = 43.2919385;
 var	lonLag = -1.9867600999;
-var path;
+var recorrido = [{lat:43.2919385, lng: -1.9867600999},{lat: 43.3258909, lng: -1.9762766999999712}];  
 var route;
 var distancia = 0;
 
@@ -20,17 +21,17 @@ var elevator = null;
 var directionsService = null;
 var directionsDisplay = null;
 var distanceService = null;
+var elevations= null;
 
 var mousemarker = null;
 var markers = [];
 var polyline = null;
-var elevat = null;
 
-var SAMPLES = 400;
+var samples = 200;
 
 var ubicacion = {lat: 43.2919385, lng: -1.9867600999};
 var destino = {lat: 43.3258909, lng: -1.9762766999999712};
-var anoeta = {lat: 43.30139339999999, lng: -1.9736820000000534};
+var anoeta = {lat: 43.307148, lng: -1.9790868999999702};
 
 //MAPA DE GOOGLE MAPS
 function initMap() {	
@@ -299,7 +300,8 @@ function initMap() {
 
     // Create a new chart in the elevation_chart DIV.
 	chartDiv = document.getElementById('elevation_chart');
-	chart = new google.visualization.AreaChart(chartDiv);
+	//chart = new google.visualization.AreaChart(chartDiv);
+	chart = new google.visualization.ColumnChart(chartDiv);
 
 	//creo el marcador con la posicion, el mapa, y el icono
 	marker = new google.maps.Marker({
@@ -372,18 +374,18 @@ function initMap() {
 		
 	calculateDistance();
 
-	google.visualization.events.addListener(chart, 'onmouseover', displayPointOnMap);
-    google.visualization.events.addListener(chart, 'onmouseover', function(e) {
-		if (mousemarker == null) {
-			mousemarker = new google.maps.Marker({
-			  position: elevations[e.row].location,
-			  map: map,
-			  icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
-			});
-		} else {
-			mousemarker.setPosition(elevations[e.row].location);
-		}
-	});
+	//google.visualization.events.addListener(chart, 'onmouseover', displayPointOnMap);
+    //google.visualization.events.addListener(chart, 'onmouseover', function(e) {
+	// 	if (mousemarker == null) {
+	// 		mousemarker = new google.maps.Marker({
+	// 		  position: elevations[e.row].location,
+	// 		  map: map,
+	// 		  icon: "http://maps.google.com/mapfiles/ms/icons/white-dot.png"
+	// 		});
+	// 	} else {
+	// 		mousemarker.setPosition(elevations[e.row].location);
+	// 	}
+	// });
 
 
 }
@@ -391,7 +393,7 @@ function initMap() {
 	/* Funcion para calcular y dibujar la ruta */
 function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 
-	path = [{lat: 43.3258909, lng: -1.9762766999999712},{lat: 43.285957, lng: -1.985465}];  
+	
 	var first = new google.maps.LatLng(43.29295, -1.97122 );
 	var second = new google.maps.LatLng(43.285957, -1.985465);
 
@@ -399,21 +401,23 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 	// Ask for 256 samples along that path.
 	// Initiate the path request.
 	elevator.getElevationAlongPath({
-	'path': path,
-	'samples': 400
+	'path': recorrido,
+	'samples': samples
 	}, plotElevation);
 
 	directionsService.route({
-	origin: {
-	  lat: 43.2919385,
-	  lng: -1.9867600999
-	},
-	destination: {
-	  lat:  43.3258909,
-	  lng: -1.9762766999999712
-	},
+	// origin: {
+	//   lat: 43.2919385,
+	//   lng: -1.9867600999
+	// },
+	// destination: {
+	//   lat:  43.3258909,
+	//   lng: -1.9762766999999712
+	// },
+	origin: recorrido[0],
+	destination: recorrido[1],
 	// waypoints: [{
-	//   location: path[0],
+	//   location: anoeta,
 	//   stopover: true
 	// }],
 	optimizeWaypoints: true,
@@ -451,12 +455,14 @@ function plotElevation(results) {
 	 //dataTable.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
 	data.addColumn('number', 'Elevation');
 	var j = 0;
-	for (var i = elevations.length - 1; i >= 0; i--) {
+	//for (var i = elevations.length - 1; i >= 0; i--) {
+	for (var i = 0; i < results.length; i++) {
 		var x = ((j*distancia)/400)/1000; 
 		j++;
 		//var x = (i*(distancia)/400; 
 		var xaxis = Math.round(x);
-		data.addRow([xaxis.toString(), elevations[i].elevation]);
+		//data.addRow([xaxis.toString(), elevations[i].elevation]);
+		data.addRow(['', elevations[i].elevation]);
 	}
 
 	var options = {
@@ -484,6 +490,7 @@ function plotElevation(results) {
 	  };
 
 	//google.visualization.events.addListener(chart, 'select', selectHandler);
+	//document.getElementById('elevation_chart').style.display = 'block';
 	chart.draw(data,options);
  
 }
@@ -542,6 +549,9 @@ function selectHandler() {
 function displayPointOnMap(e){
 	var latlong = [];
 	latlong = elevations[e.row].location;
+	var lat_=latlong.lat();
+	var long_=latlong.lng();
+
 	if (mousemarker == null) {
 		mousemarker = new google.maps.Marker({
 			position: latlong,

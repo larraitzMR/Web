@@ -10,7 +10,7 @@
 <!-- Style -->
 <style>
 	#map {
-		height: 60%;
+		height: 80%;
 	}
 	#elevation_chart{ 
 		height: 33%;
@@ -19,18 +19,31 @@
 	} 
 </style>
 
+<script type="text/javascript">
+    // Map appearance
+    var width="100%";         // width in pixels or percentage
+    var height="800";         // height in pixels
+    var names=true;           // always show ship names (defaults to false)
+
+    // Single ship tracking
+    var imo="9393230";        // display latest position (by IMO, overrides MMSI)
+    var show_track=true;      // display track line (last 24 hours)
+</script>
+<script type="text/javascript" src="https://www.vesselfinder.com/aismap.js"></script>
+
+
 <div class="content-grid mdl-grid">
 	<!-- Div Mapa -->
-	<div class="mapa_cell mdl-cell--6-col" >
+	<!-- <div class="mapa_cell mdl-cell--6-col" >
 		<div id="map"></div>
 		<div id="elevation_chart" onmouseout="clearMouseMarker()"></div>
 	</div>
 	<!-- Div separadores -->
-	<div id="separadorV" style="width: 15px; height: 750px; "></div>
+	<!--<div id="separadorV" style="width: 15px; height: 750px; "></div>
 	<div id="separadorV" style="width: 10px; height: 750px; background-color: rgb(204,204,204);"></div>
 	<div id="separadorV" style="width: 5px; height: 750px; "></div>
 	<!-- Div circulos -->
-	<div class="inf_cell mdl-color--white mdl-cell--5-col ">
+	<!--<div class="inf_cell mdl-color--white mdl-cell--5-col ">
 		<div id="nombreCorredor" style="height: 60px; font-size:160%; padding-top: 10px; padding-left: 20px;"> Runner:
 		</div>
 		<div class="graficos">
@@ -60,10 +73,10 @@
 				    <p>What a beautiful sunrise</p>
 				</div>
 			</div> -->
-			<img class="runner" src="images/runningman.png" style="height: 150px; padding-top: 10px; padding-left: 40px; " />
+		<!--	<img class="runner" src="images/runningman.png" style="height: 150px; padding-top: 10px; padding-left: 40px; " />
 		</div>
-	</div>
-</div>
+	</div>-->
+</div> 
 
 <!-- Circulos de los graficos -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">
